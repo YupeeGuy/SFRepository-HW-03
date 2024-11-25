@@ -32,7 +32,7 @@ def game_v3(number: int = 1) -> int:
 
 #function check predictions
 def score(predict) -> int:
-    """Middle count attemps on 1000 numbers
+    """Middle count attemps on 10000 numbers
 
     Args:
         predict (int): Predict function
@@ -42,7 +42,7 @@ def score(predict) -> int:
     """
     
     count_list = [] #list of count attempts
-    predict_list = np.random.randint(1, 101, size = 1000) #array predict numbers
+    predict_list = np.random.randint(1, 101, size = 10000) #array predict numbers
     
     #cycle numbers in predict list and return list with counts attemps
     for num in predict_list:
